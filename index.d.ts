@@ -9,6 +9,6 @@ interface PCRegistry extends IndexedData {
 interface BedrockRegistry extends IndexedData {
 
 }
-type Registry = PCRegistry & BedrockRegistry
+export type Registry = PCRegistry & BedrockRegistry
 declare function loader(mcVersion: string): Registry
-export = loader
+export default loader
